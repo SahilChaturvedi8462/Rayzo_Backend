@@ -46,8 +46,7 @@ public class AiService {
     public String determineSeverity(String priority) {
         if (priority == null) return "NORMAL";
         return switch (priority.toUpperCase()) {
-            case "CRITICAL" -> "SEVERE";
-            case "HIGH"     -> "MODERATE";
+            case "HIGH" -> "SEVERE";
             case "MEDIUM"   -> "MILD";
             case "LOW"      -> "NORMAL";
             default         -> "NORMAL";
